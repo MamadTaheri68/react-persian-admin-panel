@@ -1,10 +1,15 @@
-import React from 'react';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div>
-      <h1>App</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <h1>App</h1>
+      </BrowserRouter>
+    </>
   );
 };
 
