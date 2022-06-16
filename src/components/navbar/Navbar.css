@@ -17,6 +17,9 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1rem;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
 }
 
 .navbar .nav-right {
@@ -69,11 +72,35 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px dashed #007bff;
   height: 100%;
 }
 
+.navbar .nav-left .nav-left-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 4px;
+  cursor: pointer;
+  padding: 5px 2px;
+  border-radius: 6px;
+}
+
+.navbar .nav-left .nav-left-box svg {
+  color: #007bff;
+  font-size: 24px;
+  padding-left: 2px;
+}
+
+.navbar .nav-left .nav-left-box:hover {
+  background-color: #2f3031;
+  color: #fff;
+}
+
 .nav-menu {
+  z-index: 100;
   background-color: #007bff;
   width: 220px;
   height: calc(100vh - 60px);
@@ -96,9 +123,9 @@
 }
 
 .nav-menu ul li {
-  padding: 1rem 0;
+  padding: 1rem 10px 1rem 0;
   width: 100%;
-  text-align: center;
+  text-align: right;
 }
 
 .nav-menu ul li:hover {
@@ -111,6 +138,17 @@
   color: #fff;
   width: 100%;
   font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-menu ul li a span {
+  margin-right: 8px;
+  font-size: 18px;
 }
 
 .nav-menu.active {

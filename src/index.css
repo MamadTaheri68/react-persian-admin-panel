@@ -19,3 +19,15 @@ body {
   text-align: right;
   font-family: IRANSansWeb !important;
 }
+
+.main-body {
+  position: absolute; 
+  width: 100%;
+}
+
+.main-wrapper {
+  /* min-height: calc(100vh - 100px); */
+  border: 5px solid red;
+  position: relative; 
+  margin-top: 60px;
+}

@@ -21,7 +21,18 @@ const Navbar = () => {
           <h1>ادمین پنل ری اکت ورژن یک</h1>
         </div>
         <div className="nav-left">
-          <h4>رزرو آیکن های سمت چپ</h4>
+          <div className="nav-left-box">
+            <FaIcons.FaUserCircle />
+            <span>محمد طاهری</span>
+          </div>
+          <div className="nav-left-box">
+            <FaIcons.FaGlobeAmericas />
+            <span>فا/fA</span>
+          </div>
+          <div className="nav-left-box">
+            <FaIcons.FaSignOutAlt />
+            <span>خروج</span>
+          </div>
         </div>
       </div>
       <nav className={showSidebar ? "nav-menu active" : "nav-menu"}>
@@ -29,7 +40,10 @@ const Navbar = () => {
           {pagesList.map((item) => {
             return (
               <li key={item.id}>
-                <Link to={item.route}>{item.title}</Link>
+                <Link to={item.route}>
+                  {item.icon}
+                  <span>{item.title}</span>
+                  </Link>
               </li>
             );
           })}
