@@ -3,6 +3,7 @@ import "./Navbar.css";
 import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import pagesList from "../data/pagesList";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -20,16 +21,18 @@ const Navbar = () => {
           <h1>ادمین پنل ری اکت ورژن یک</h1>
         </div>
         <div className="nav-left">
-          <h1>آیکن های سمت چپ</h1>
+          <h1>رزرو آیکن های سمت چپ</h1>
         </div>
       </div>
       <nav className={showSidebar ? "nav-menu active" : "nav-menu"}>
         <ul>
-          <li>item #1</li>
-          <li>item #2</li>
-          <li>item #3</li>
-          <li>item #4</li>
-          <li>item #5</li>
+          {pagesList.map((item) => {
+            return (
+              <li key={item.id}>
+                <Link to={item.route}>{item.title}</Link>
+              </li>
+            );
+          })}
         </ul>
       </nav>
     </>
