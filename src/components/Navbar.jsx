@@ -21,7 +21,7 @@ const Navbar = () => {
           <h1>ادمین پنل ری اکت ورژن یک</h1>
         </div>
         <div className="nav-left">
-          <h1>رزرو آیکن های سمت چپ</h1>
+          <h4>رزرو آیکن های سمت چپ</h4>
         </div>
       </div>
       <nav className={showSidebar ? "nav-menu active" : "nav-menu"}>
