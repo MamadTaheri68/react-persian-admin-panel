@@ -3,7 +3,7 @@ import "./Navbar.css";
 import * as FaIcons from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import pagesList from "../data/pagesList";
+import pagesList from "../../data/pagesList";
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);
