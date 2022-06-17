@@ -106,7 +106,7 @@
   height: calc(100vh - 60px);
   position: fixed;
   top: 60px;
-  right: -100%;
+  right: -220px;
   -webkit-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
   display: -webkit-box;
